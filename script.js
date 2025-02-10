@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Add loaded class to profile image
+    const profileImage = document.querySelector('.profile-image');
+    if (profileImage) {
+        profileImage.addEventListener('load', () => {
+            profileImage.classList.add('loaded');
+        });
+    }
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

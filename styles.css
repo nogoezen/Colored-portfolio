@@ -360,7 +360,7 @@ body:not(.loaded) {
 /* Image Loading */
 .profile-image,
 .contact-image img {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in;
 }
 
